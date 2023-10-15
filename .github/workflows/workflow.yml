@@ -27,8 +27,8 @@ jobs:
     - name: Build and Publish
       run: |
         python setup.py sdist bdist_wheel
-        twine upload dist/*
-     env:
-    TWINE_USERNAME: __token__
-    TWINE_PASSWORD: ${{ secrets.PyPIToken }}  # Use the correct secret name
-  working-directory: ${{ github.workspace }}
+        twine upload --repository pypi dist/*
+      env:
+        TWINE_USERNAME: __token__
+        TWINE_PASSWORD: ${{ secrets.PyPIToken }}
+      working-directory: ${{ github.workspace }}
