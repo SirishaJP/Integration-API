@@ -18,6 +18,7 @@ To install the IntegrationAPI package, use `pip`:
 
 ```bash
 pip install integrationapi
+```
 
 ## Usage
 Here's how you can use the IntegrationAPI package in your Python project:
