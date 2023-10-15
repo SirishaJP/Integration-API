@@ -41,4 +41,4 @@ for tweet in tweets:
     print(tweet)
 
 ## License
-This package is open-source and is available under the MIT License.
+This package is open-source and is available under the Apache License Version 2.0.
