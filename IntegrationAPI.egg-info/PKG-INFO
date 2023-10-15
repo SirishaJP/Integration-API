@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: IntegrationAPI
+Version: 0.1.0
+Summary: Python package for integrating with various APIs.
+Author: Sirisha Jotheeswaran Padmasekhar
+Author-email: sirishajpadmasekhar@gmail.com
+License-File: LICENSE
