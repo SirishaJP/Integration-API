@@ -27,5 +27,5 @@ jobs:
     - name: Build and Publish
       run: |
         python setup.py sdist bdist_wheel
-        twine upload --repository pypi --username ${{ secrets.SIRISHAJP}} --password ${{ secrets.SIRISHAJP}} dist/*
+        twine upload --repository pypi --username ${{ secrets.PYPI_USERNAME }} --password ${{ secrets.PYPITOKEN }} dist/*
       working-directory: ${{ github.workspace }}
