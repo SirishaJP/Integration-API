@@ -27,16 +27,5 @@ jobs:
     - name: Build and Publish
       run: |
         python setup.py sdist bdist_wheel
-        twine upload --repository pypi dist/*
-      env:
-        TWINE_USERNAME: __token__
-        TWINE_PASSWORD: ${{ secrets.PyPIToken }}
+        twine upload --repository pypi --username ${{ secrets.SIRISHAJP}} --password ${{ secrets.SIRISHAJP}} dist/*
       working-directory: ${{ github.workspace }}
-      
-  - name: Debug PyPI Token
-  run: echo ${{ secrets.PyPIToken }}
-
-  - name: Update Twine
-  run: pip install --upgrade twine
-
-
